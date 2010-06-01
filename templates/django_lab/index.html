@@ -1,0 +1,10 @@
+{% if simulation_list %}
+<ul>
+	{% for simulation in simulation_list %}
+        <li><a href="/simulation/{{ simulation.id }}/">{{ simulation.name }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>No simulations are available.</p>
+{% endif %}
+
